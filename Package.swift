@@ -19,13 +19,13 @@ let package = Package(
             targets: ["ArtistDetail"]),
     ],
     dependencies: [
-        .package(name: analyticsInterface, path: "../../../Analytics/\(analyticsInterface)"),
-        .package(name: commonModels, path: "../../../\(commonModels)"),
-        .package(name: dependencyContainer, path: "../../../\(dependencyContainer)"),
-        .package(name: utilities, path: "../../../\(utilities)"),
-        .package(name: artistDetailInterface, path: "../../../Modules/ArtistDetail/\(artistDetailInterface)"),
-        .package(name: temporaryMainPackageInterface, path: "../../../\(temporaryMainPackageInterface)"),
-        .package(name: songDetailsInterface, path: "../../SongDetails/\(songDetailsInterface)")
+        .package(name: analyticsInterface, path: "../\(analyticsInterface)"),
+        .package(name: commonModels, path: "../\(commonModels)"),
+        .package(name: dependencyContainer, path: "../\(dependencyContainer)"),
+        .package(name: utilities, path: "../\(utilities)"),
+        .package(name: artistDetailInterface, path: "../\(artistDetailInterface)"),
+        .package(name: temporaryMainPackageInterface, path: "../\(temporaryMainPackageInterface)"),
+        .package(name: songDetailsInterface, path: "../\(songDetailsInterface)")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
